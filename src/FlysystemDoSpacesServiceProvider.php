@@ -2,9 +2,9 @@
 
 namespace Smart48\FlysystemDoSpaces;
 
+use Smart48\FlysystemDoSpaces\Commands\FlysystemDoSpacesCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Smart48\FlysystemDoSpaces\Commands\FlysystemDoSpacesCommand;
 
 class FlysystemDoSpacesServiceProvider extends PackageServiceProvider
 {
