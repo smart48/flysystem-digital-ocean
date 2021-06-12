@@ -40,16 +40,18 @@ class CheckFor503S3Client implements S3ClientInterface
     {
         try {
             $this->lastException = null;
+
             return $this->actualClient->execute($command);
         } catch (Exception $exception) {
             $this->lastException = $exception;
+
             throw $exception;
         }
     }
 
     public function was503()
     {
-        if ( ! $this->lastException instanceof S3Exception) {
+        if (! $this->lastException instanceof S3Exception) {
             return false;
         }
         
