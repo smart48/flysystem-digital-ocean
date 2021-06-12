@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Smart48\FlysystemDoSpaces;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use Smart48\FlysystemDoSpaces\Commands\FlysystemDoSpacesCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class FlysystemDoSpacesServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('flysystem-do-spaces')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_flysystem-do-spaces_table')
+            ->hasCommand(FlysystemDoSpacesCommand::class);
     }
 }

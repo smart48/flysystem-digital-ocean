@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Smart48\FlysystemDoSpaces\Tests;
 
 class ExampleTest extends TestCase
 {

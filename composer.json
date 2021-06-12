@@ -1,17 +1,17 @@
 {
-    "name": "vendor_slug/package_slug",
-    "description": ":package_description",
+    "name": "smart48/flysystem-do-spaces",
+    "description": "Smart48 Flysystem for Digital Ocean Spaces",
     "keywords": [
-        ":vendor_name",
+        "smart48",
         "laravel",
-        "package_slug"
+        "flysystem-do-spaces"
     ],
-    "homepage": "https://github.com/vendor_slug/package_slug",
+    "homepage": "https://github.com/smart48/flysystem-do-spaces",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Jasper Frumau",
+            "email": "jasper.smart48@gmail.com",
             "role": "Developer"
         }
     ],
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Smart48\\FlysystemDoSpaces\\": "src",
+            "Smart48\\FlysystemDoSpaces\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Smart48\\FlysystemDoSpaces\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,10 +50,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Smart48\\FlysystemDoSpaces\\FlysystemDoSpacesServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "FlysystemDoSpaces": "Smart48\\FlysystemDoSpaces\\FlysystemDoSpacesFacade"
             }
         }
     },
